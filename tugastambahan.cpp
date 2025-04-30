@@ -6,9 +6,9 @@ class Segitiga {
     public:
         int alas, tinggi;
         void inputData() {
-            cout << "Masukkan Alas Segitiga";
+            cout << "Masukkan Alas Segitiga : ";
             cin >> alas;
-            cout << "Masukkan Tinggi Segitiga";
+            cout << "Masukkan Tinggi Segitiga : ";
             cin >> tinggi;
         }
 
@@ -21,9 +21,16 @@ class Segitiga {
         void outputData() {
             if (alas % 2 == 0) {
             float hasil = luas(alas, tinggi);
-            cout << "Luas Segitiga" << hasil << "cm";
+            cout << "Luas Segitiga : " << hasil << "cm";
         } else {
             cout << "Alas yang dimasukkan adalah bilangan ganjil, luas tidak dapat dihitung";
         }
     }
 };
+
+int main() {
+    Segitiga segitiga;
+    segitiga.inputData();
+    segitiga.outputData();
+    return 0;
+}
