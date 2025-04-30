@@ -11,3 +11,8 @@ class Segitiga {
             cout << "Masukkan Tinggi Segitiga";
             cin >> tinggi;
         }
+
+    private:
+        float luas(int alas, int tinggi) {
+            return 0.5 * alas * tinggi;
+        }
